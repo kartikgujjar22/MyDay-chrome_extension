@@ -1,12 +1,60 @@
-# React + Vite
+MyDay Extension
+Your Personal Productivity Companion for Chrome
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+MyDay is a sleek and modern Chrome extension designed to boost your daily productivity. It provides two essential tools in one intuitive popup: a Daily Tasks manager to keep track of your to-dos, and a customizable Timer to help you focus and manage your time effectively. Tasks automatically refresh every 24 hours, giving you a fresh start each day. Built with React and Vite, MyDay offers a smooth, responsive, and aesthetically pleasing user experience right in your browser.
 
-Currently, two official plugins are available:
+Features
+Daily Task Management: Add, view, and delete tasks for your day.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+24-Hour Task Refresh: Your task list automatically clears every 24 hours, preparing you for a new day.
 
-## Expanding the ESLint configuration
+Customizable Timer: Set a timer for focused work sessions or breaks.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Intuitive Tabbed Interface: Easily switch between tasks and timer.
+
+Modern UI: Clean, responsive, and user-friendly design built with React.
+
+Technologies Used
+React: For building the user interface.
+
+Vite: As a fast build tool for development and production bundling.
+
+HTML, CSS, JavaScript: Core web technologies.
+
+Chrome Extension APIs: chrome.storage for data persistence and chrome.alarms for scheduling task refreshes.
+
+Installation and Usage
+To use this extension from the source code, follow these steps:
+
+Clone this repository to your local machine or download the code as a ZIP file and extract it.
+
+git clone <your-repo-url>
+cd my-react-extension # Navigate into the project directory
+
+Install dependencies:
+
+npm install
+
+Build the extension:
+This command will compile your React application and create the necessary files for the Chrome extension in a dist folder.
+
+npm run build
+
+Load the extension in Chrome:
+
+Open your Chrome browser.
+
+Navigate to chrome://extensions.
+
+In the top right corner, enable "Developer mode".
+
+In the top left corner, click "Load unpacked".
+
+Browse to your project directory (my-react-extension) and select the dist folder.
+
+The "MyDay Extension" should now appear in your list of extensions, and its icon will be visible in your browser's toolbar.
+
+You are now ready to use the MyDay extension! Click on the extension icon to open the popup and start managing your tasks and time.
+
+Contributing
+Contributions are welcome! If you have ideas for new features, improvements, or bug fixes, please open an issue or submit a pull request.
