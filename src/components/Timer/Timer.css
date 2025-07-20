@@ -1,0 +1,64 @@
+/* my-react-extension/src/components/Timer/Timer.css */
+.timer-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.timer-container h2 {
+  font-size: 1.8em;
+  color: var(--secondary-color);
+  margin-bottom: var(--spacing-lg);
+}
+
+.timer-display {
+  font-family: 'Roboto Mono', monospace; /* Monospaced font for timer */
+  font-size: 5em; /* Even larger font for timer */
+  font-weight: bold;
+  color: var(--secondary-dark);
+  margin-bottom: var(--spacing-lg);
+  background-color: var(--card-background);
+  padding: var(--spacing-md) var(--spacing-lg);
+  border-radius: var(--border-radius-lg);
+  box-shadow: inset 0 0 15px rgba(0, 0, 0, 0.1);
+  min-width: 220px; /* Ensure consistent width */
+  text-align: center;
+  border: 1px solid var(--border-color);
+}
+
+.timer-controls {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: var(--spacing-sm);
+  width: 90%;
+  max-width: 350px;
+}
+
+.timer-controls input {
+  width: 90px;
+  padding: var(--spacing-sm) var(--spacing-md);
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius-sm);
+  font-size: 16px;
+  text-align: center;
+  outline: none;
+  color: var(--text-color);
+}
+
+.timer-controls input:focus {
+  border-color: var(--secondary-color);
+  box-shadow: 0 0 0 2px rgba(33, 150, 243, 0.2);
+}
+
+.timer-controls button {
+  background-color: var(--secondary-color);
+  color: white;
+  padding: var(--spacing-sm) var(--spacing-md);
+  font-size: 16px;
+}
+
+.timer-controls button:hover:not(:disabled) {
+  background-color: var(--secondary-dark);
+}

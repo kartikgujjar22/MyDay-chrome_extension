@@ -1,0 +1,25 @@
+/* my-react-extension/src/components/DailyTasks/DailyTasks.css */
+.daily-tasks-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.daily-tasks-container h2 {
+  font-size: 1.8em;
+  color: var(--primary-color);
+  margin-bottom: var(--spacing-lg);
+}
+
+.clear-all-button {
+  background-color: var(--warning-color);
+  color: white;
+  margin-top: var(--spacing-md);
+  padding: 8px 15px;
+  font-size: 14px;
+}
+
+.clear-all-button:hover {
+  background-color: #e68a00; /* Darker orange */
+}

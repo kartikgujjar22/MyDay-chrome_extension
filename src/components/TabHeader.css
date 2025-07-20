@@ -1,0 +1,40 @@
+/* my-react-extension/src/components/TabHeader.css */
+.tab-header {
+  display: flex;
+  width: 100%;
+  margin-bottom: var(--spacing-lg);
+  border-bottom: 2px solid var(--border-color);
+  background-color: var(--card-background); /* White background for header */
+  border-radius: var(--border-radius-md) var(--border-radius-md) 0 0;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05); /* Subtle shadow */
+}
+
+.tab-button {
+  flex: 1;
+  padding: var(--spacing-sm) 0;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--subtle-text-color);
+  border-bottom: 3px solid transparent;
+  transition: all 0.3s ease;
+  border-radius: var(--border-radius-sm) var(--border-radius-sm) 0 0;
+  outline: none; /* Remove focus outline */
+}
+
+.tab-button:hover:not(.active) {
+  background-color: #e9ebee; /* Lighter hover for non-active */
+  color: var(--text-color);
+}
+
+.tab-button.active {
+  color: var(--primary-color);
+  border-bottom-color: var(--primary-color);
+  background-color: var(--background-color); /* Matches app background */
+  box-shadow: inset 0 -4px 0 var(--primary-color); /* More prominent active indicator */
+  /* Remove old box-shadow for active tab, use bottom border instead */
+  border-bottom: 3px solid var(--primary-color);
+  font-weight: 700;
+}

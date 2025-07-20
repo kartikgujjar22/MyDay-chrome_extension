@@ -1,0 +1,48 @@
+/* my-react-extension/src/components/DailyTasks/TaskItem.css */
+.task-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--card-background);
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius-sm);
+  padding: var(--spacing-sm) var(--spacing-md);
+  margin-bottom: var(--spacing-sm);
+  box-shadow: var(--shadow-sm);
+  transition: all 0.2s ease-in-out;
+}
+
+.task-item:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.task-item span {
+  flex-grow: 1;
+  text-align: left;
+  color: var(--text-color);
+  font-size: 15px;
+}
+
+.delete-button {
+  background-color: var(--danger-color);
+  color: white;
+  border: none;
+  border-radius: 50%; /* Make it circular */
+  width: 28px; /* Slightly larger */
+  height: 28px; /* Slightly larger */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px; /* Larger 'x' */
+  cursor: pointer;
+  margin-left: var(--spacing-md);
+  flex-shrink: 0;
+  box-shadow: none; /* Override global button shadow */
+}
+
+.delete-button:hover {
+  background-color: #da190b; /* Darker red */
+  transform: none; /* Override global button hover transform */
+  box-shadow: none;
+}
